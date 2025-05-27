@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+body {
+   background-color: #000;
+   font-family: $ff-primary;
+   color: white;
+   overflow: hidden;
+}
+
+.wrapper {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: grid;
+   width: 75vw;
+   max-width: 1300px;
+   margin: 0 auto;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 30px;
+   align-content: center;
+   z-index: 1;
+}

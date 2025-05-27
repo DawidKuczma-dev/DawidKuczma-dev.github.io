@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+.intro-tile {
+   grid-row: span 2;
+   background-color: $tile-color;
+   border-radius: 20px;
+   &__me {
+      background-color: $aboutMe-color;
+      border-radius: 20px;
+      padding: 30px 25px;
+      height: 65%;
+      font-weight: 300;
+      img {
+         width: 45%;
+         aspect-ratio: 1 / 1;
+         object-fit: cover;
+         border: 2px solid $tile-color;
+         border-radius: 50%;
+         margin-bottom: 30px;
+      }
+      p {
+         font-size: 1.3rem;
+         margin-bottom: 20px;
+         color: $font-color;
+      }
+      h1 {
+         font-size: 3rem;
+         font-weight: inherit;
+      }
+   }
+   &__filters {
+      padding: 25px;
+      border-radius: 20px;
+      height: 35%;
+      ul {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         height: 100%;
+         list-style-type: none;
+         padding-left: 0;
+         font-size: 1.2rem;
+         font-weight: 300;
+         li {
+            display: flex;
+            color: $font-color;
+            img {
+               height: 23px;
+               margin-right: 5px;
+            }
+            button {
+               &:hover {
+                  cursor: pointer;
+                  color: white;
+                  font-weight: 500;
+               }
+               &.active {
+                  color: white;
+                  font-weight: 500;
+               }
+            }
+         }
+      }
+   }
+}

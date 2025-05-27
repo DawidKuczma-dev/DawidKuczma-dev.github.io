@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+* {
+   margin: 0;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+   display: block;
+   max-width: 100%;
+}
+input {
+   border-style: none;
+   background: transparent;
+   outline: none;
+}
+button {
+   padding: 0;
+   background: none;
+   border: none;
+   outline: none;
+   color: inherit;
+   font-family: inherit;
+   font-size: inherit;
+   font-weight: inherit;
+   line-height: inherit;
+}
+a {
+   all: unset;
+}
