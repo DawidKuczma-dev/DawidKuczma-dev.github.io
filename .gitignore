@@ -1,0 +1,9 @@
+# Ignoruj skompilowany CSS
+css/main.css
+css/main.css.map
+
+# Ignoruj pliki tymczasowe edytora
+.vscode/
+*.log
+.DS_Store
+

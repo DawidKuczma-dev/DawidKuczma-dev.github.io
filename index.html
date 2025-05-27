@@ -4,6 +4,87 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="css/main.css" />
    </head>
-   <body></body>
+   <body>
+      <div id="grid"></div>
+      <div class="wrapper">
+         <div class="intro-tile">
+            <div class="intro-tile__me">
+               <img src="assets/images/prof.jpg" alt="Profile picture" />
+               <p>Portoflio wykonane przez:</p>
+               <h1>Dawid Kuczma</h1>
+            </div>
+
+            <div class="intro-tile__filters">
+               <ul>
+                  <li>
+                     <button class="active" data-filter="all">Wszystkie</button>
+                  </li>
+                  <li>
+                     <img src="assets/images/js.png" alt="JavaScript logo" />
+                     <button data-filter="js">JavaScript</button>
+                  </li>
+                  <li>
+                     <img src="assets/images/react.png" alt="React logo" />
+                     <button data-filter="react">React</button>
+                  </li>
+                  <li>
+                     <img src="assets/images/ts.png" alt="TypeScript logo" />
+                     <button data-filter="ts">TypeScript</button>
+                  </li>
+                  <li>
+                     <img src="assets/images/backend.png" alt="Backend logo" />
+                     <button data-filter="backend">Backend</button>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <a href="" target="_blank" rel="noopener noreferrer" class="project-tile">
+            <div class="project-tile__bar project-tile__bar--js"></div>
+            <div class="project-tile__content">
+               <h1>ToDo App</h1>
+               <img src="" alt="" />
+            </div>
+         </a>
+         <a href="" target="_blank" rel="noopener noreferrer" class="project-tile">
+            <div class="project-tile__bar project-tile__bar--js"></div>
+            <div class="project-tile__content">
+               <h1>JavaScript</h1>
+               <img src="" alt="" />
+            </div>
+         </a>
+         <a href="" target="_blank" rel="noopener noreferrer" class="project-tile">
+            <div class="project-tile__bar project-tile__bar--js"></div>
+            <div class="project-tile__content">
+               <h1>JavaScript</h1>
+               <img src="" alt="" />
+            </div>
+         </a>
+         <a href="" target="_blank" rel="noopener noreferrer" class="project-tile">
+            <div class="project-tile__bar project-tile__bar--react"></div>
+            <div class="project-tile__content">
+               <h1>React: coming soon...</h1>
+               <img src="" alt="" />
+            </div>
+         </a>
+         <a href="" target="_blank" rel="noopener noreferrer" class="project-tile">
+            <div class="project-tile__bar project-tile__bar--ts"></div>
+            <div class="project-tile__content">
+               <h1>TypeScript: coming soon...</h1>
+               <img src="" alt="" />
+            </div>
+         </a>
+         <a href="" target="_blank" rel="noopener noreferrer" class="project-tile">
+            <div class="project-tile__bar project-tile__bar--backend"></div>
+            <div class="project-tile__content">
+               <h1>Backend: coming soon...</h1>
+               <img src="" alt="" />
+            </div>
+         </a>
+      </div>
+   </body>
 </html>
