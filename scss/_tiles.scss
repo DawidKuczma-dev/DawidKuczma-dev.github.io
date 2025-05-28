@@ -1,0 +1,50 @@
+@use 'variables' as *;
+
+.project-tile {
+   border-radius: 20px;
+   overflow: hidden;
+   position: relative;
+   font-weight: 300;
+   cursor: pointer;
+   clip-path: inset(0 round 20px);
+
+   &__bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      z-index: -1;
+   }
+   &__content {
+      height: calc(100% - 30px);
+      margin-top: 30px;
+      border-radius: 20px;
+      background-color: $tile-color;
+      padding: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      transition: background-color 0.3s linear;
+      h1 {
+         font-weight: inherit;
+         margin-bottom: 20px;
+      }
+      img {
+         border-radius: 20px;
+         transition: 0.3s;
+      }
+   }
+   &:hover {
+      .project-tile__content {
+         background-color: $tile-hover;
+         font-weight: 400;
+         img {
+            border-radius: 5px;
+         }
+      }
+   }
+   &.hidden {
+      display: none;
+   }
+}

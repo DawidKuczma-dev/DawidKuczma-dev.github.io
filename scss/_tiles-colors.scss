@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+@each $name, $color in $colors {
+   .project-tile {
+      &__bar--#{'' + $name} {
+         background-color: $color;
+      }
+
+      &:hover {
+         .project-tile__bar--#{'' + $name} {
+            background-color: rgba($color, 1);
+            transition: background-color 0.3s linear;
+         }
+      }
+   }
+}
