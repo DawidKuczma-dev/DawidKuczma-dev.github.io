@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+#wave-canvas {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: -1;
+}
+
+#grid {
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: grid;
+   width: 100vw;
+   height: 100vh;
+   gap: 2px;
+   z-index: 0;
+}
+
+.square {
+   background-color: $bg-color;
+   box-sizing: border-box;
+   transition: 1s;
+}
+
+.square:hover {
+   background-color: $tile-color;
+   transition: 0s;
+}
