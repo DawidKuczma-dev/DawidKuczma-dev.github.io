@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+a {
+  all: unset;
+}
+
+#wave-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  gap: 2px;
+  z-index: 0;
+}
+
+.square {
+  background-color: hsl(226, 43%, 10%);
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+.square:hover {
+  background-color: hsl(235, 46%, 20%);
+  transition: 0s;
+}
+
+body {
+  background-color: #000;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  width: 75vw;
+  max-width: 1300px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-content: center;
+  z-index: 1;
+}
+
+.intro-tile {
+  grid-row: span 2;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+}
+.intro-tile__me {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 20px;
+  padding: 30px 25px;
+  height: 65%;
+  font-weight: 300;
+}
+.intro-tile__me img {
+  width: 45%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid hsl(235, 46%, 20%);
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.intro-tile__me p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: hsl(236, 100%, 87%);
+}
+.intro-tile__me h1 {
+  font-size: 3rem;
+  font-weight: inherit;
+}
+.intro-tile__filters {
+  padding: 25px;
+  border-radius: 20px;
+  height: 35%;
+}
+.intro-tile__filters ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.intro-tile__filters ul li {
+  display: flex;
+  color: hsl(236, 100%, 87%);
+}
+.intro-tile__filters ul li img {
+  height: 23px;
+  margin-right: 5px;
+}
+.intro-tile__filters ul li button:hover {
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+}
+.intro-tile__filters ul li button.active {
+  color: white;
+  font-weight: 500;
+}
+
+.project-tile__bar--js {
+  background-color: hsla(48, 100%, 61%, 0.8);
+}
+.project-tile:hover .project-tile__bar--js {
+  background-color: #ffd738;
+  transition: background-color 0.3s linear;
+}
+
+.project-tile__bar--react {
+  background-color: hsla(195, 100%, 75%, 0.8);
+}
+.project-tile:hover .project-tile__bar--react {
+  background-color: #80dfff;
+  transition: background-color 0.3s linear;
+}
+
+.project-tile__bar--ts {
+  background-color: hsla(211, 57%, 50%, 0.8);
+}
+.project-tile:hover .project-tile__bar--ts {
+  background-color: #377dc8;
+  transition: background-color 0.3s linear;
+}
+
+.project-tile__bar--backend {
+  background-color: hsla(209, 26%, 21%, 0.8);
+}
+.project-tile:hover .project-tile__bar--backend {
+  background-color: #283643;
+  transition: background-color 0.3s linear;
+}
+
+.project-tile {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-clip-path: inset(0 round 20px);
+          clip-path: inset(0 round 20px);
+}
+.project-tile__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: -1;
+}
+.project-tile__content {
+  height: calc(100% - 30px);
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: hsl(235, 46%, 20%);
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  transition: background-color 0.3s linear;
+}
+.project-tile__content h1 {
+  font-weight: inherit;
+  margin-bottom: 20px;
+}
+.project-tile__content img {
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.project-tile:hover .project-tile__content {
+  background-color: hsl(236, 41%, 34%);
+  font-weight: 400;
+}
+.project-tile:hover .project-tile__content img {
+  border-radius: 5px;
+}
+.project-tile.hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
