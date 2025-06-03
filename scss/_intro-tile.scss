@@ -7,7 +7,7 @@
    &__me {
       background-color: $aboutMe-color;
       border-radius: 20px;
-      padding: 30px 25px;
+      padding: 25px;
       height: 65%;
       font-weight: 300;
       img {
@@ -16,11 +16,11 @@
          object-fit: cover;
          border: 2px solid $tile-color;
          border-radius: 50%;
-         margin-bottom: 30px;
+         margin-bottom: 20px;
       }
       p {
          font-size: 1.3rem;
-         margin-bottom: 20px;
+         margin-bottom: 10px;
          color: $font-color;
       }
       h1 {

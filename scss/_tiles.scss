@@ -28,19 +28,40 @@
       transition: background-color 0.3s linear;
       h1 {
          font-weight: inherit;
-         margin-bottom: 20px;
+         margin-bottom: 10px;
       }
-      img {
+      div {
+         background-size: cover;
+         width: 100%;
+         height: calc(100% - 48px);
          border-radius: 20px;
-         transition: 0.3s;
+         transition: 0.3s linear;
+         &.ToDoApp {
+            background-image: url('../assets/images/ToDoApp.png');
+         }
+         &.PcBuilder {
+            background-image: url('../assets/images/PcBuilder.png');
+         }
+         &.Cv {
+            background-image: url('../assets/images/Cv.png');
+         }
       }
    }
    &:hover {
       .project-tile__content {
          background-color: $tile-hover;
          font-weight: 400;
-         img {
+         div {
             border-radius: 5px;
+            &.ToDoApp {
+               background-image: url('../assets/images/ToDoApp-hover.png');
+            }
+            &.PcBuilder {
+               background-image: url('../assets/images/PcBuilder-hover.png');
+            }
+            &.Cv {
+               background-image: url('../assets/images/Cv-hover.png');
+            }
          }
       }
    }

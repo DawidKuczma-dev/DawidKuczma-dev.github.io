@@ -87,6 +87,7 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 30px;
   align-content: center;
   z-index: 1;
@@ -100,7 +101,7 @@ body {
 .intro-tile__me {
   background-color: hsl(246, 80%, 60%);
   border-radius: 20px;
-  padding: 30px 25px;
+  padding: 25px;
   height: 65%;
   font-weight: 300;
 }
@@ -111,11 +112,11 @@ body {
      object-fit: cover;
   border: 2px solid hsl(235, 46%, 20%);
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .intro-tile__me p {
   font-size: 1.3rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: hsl(236, 100%, 87%);
 }
 .intro-tile__me h1 {
@@ -217,18 +218,39 @@ body {
 }
 .project-tile__content h1 {
   font-weight: inherit;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.project-tile__content img {
+.project-tile__content div {
+  background-size: cover;
+  width: 100%;
+  height: calc(100% - 48px);
   border-radius: 20px;
-  transition: 0.3s;
+  transition: 0.3s linear;
+}
+.project-tile__content div.ToDoApp {
+  background-image: url("../assets/images/ToDoApp.png");
+}
+.project-tile__content div.PcBuilder {
+  background-image: url("../assets/images/PcBuilder.png");
+}
+.project-tile__content div.Cv {
+  background-image: url("../assets/images/Cv.png");
 }
 .project-tile:hover .project-tile__content {
   background-color: hsl(236, 41%, 34%);
   font-weight: 400;
 }
-.project-tile:hover .project-tile__content img {
+.project-tile:hover .project-tile__content div {
   border-radius: 5px;
+}
+.project-tile:hover .project-tile__content div.ToDoApp {
+  background-image: url("../assets/images/ToDoApp-hover.png");
+}
+.project-tile:hover .project-tile__content div.PcBuilder {
+  background-image: url("../assets/images/PcBuilder-hover.png");
+}
+.project-tile:hover .project-tile__content div.Cv {
+  background-image: url("../assets/images/Cv-hover.png");
 }
 .project-tile.hidden {
   display: none;
