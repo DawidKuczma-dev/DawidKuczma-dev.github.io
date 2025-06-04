@@ -15,8 +15,18 @@
       <div class="wrapper">
          <div class="intro-tile">
             <div class="intro-tile__me">
-               <img src="assets/images/prof.jpg" alt="Profile picture" />
-               <p>Portoflio wykonane przez:</p>
+               <video
+                  id="profileVideo"
+                  autoplay
+                  muted
+                  playsinline
+                  onended="this.pause();"
+                  poster="assets/images/poster.jpg"
+                  src="assets/images/prof.mp4"
+               >
+                  Twoja przeglądarka nie obsługuje wideo.
+               </video>
+               <p>Portfolio wykonane przez:</p>
                <h1>Dawid Kuczma</h1>
             </div>
 
@@ -123,6 +133,7 @@
             </div>
          </a>
       </div>
+      <script src="js/video.js"></script>
       <script src="js/background.js"></script>
       <script src="js/filters.js"></script>
    </body>

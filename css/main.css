@@ -101,26 +101,26 @@ body {
 .intro-tile__me {
   background-color: hsl(246, 80%, 60%);
   border-radius: 20px;
-  padding: 25px;
+  padding: 20px;
   height: 65%;
   font-weight: 300;
 }
-.intro-tile__me img {
-  width: 45%;
+.intro-tile__me video {
+  width: 60%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   border: 2px solid hsl(235, 46%, 20%);
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .intro-tile__me p {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
   color: hsl(236, 100%, 87%);
 }
 .intro-tile__me h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: inherit;
 }
 .intro-tile__filters {
