@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 .project-tile {
    border-radius: 20px;
@@ -67,5 +68,17 @@
    }
    &.hidden {
       display: none;
+   }
+   @include mq(tablet-large) {
+      font-size: 0.8rem;
+      &:nth-child(6) {
+         grid-column: 2;
+      }
+   }
+   @include mq(tablet) {
+      font-size: 0.8rem;
+      &:nth-child(6) {
+         grid-column: auto;
+      }
    }
 }

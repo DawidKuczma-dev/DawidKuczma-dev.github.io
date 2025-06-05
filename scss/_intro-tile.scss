@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 .intro-tile {
    grid-row: span 2;
@@ -22,6 +23,7 @@
          font-size: 1.2rem;
          margin-bottom: 5px;
          color: $font-color;
+         min-height: 46px;
          &:last-of-type::after {
             content: '_';
             animation: cursor 0.3s infinite alternate;
@@ -64,6 +66,20 @@
                }
             }
          }
+      }
+   }
+   @include mq(tablet-large) {
+      grid-row: span 2;
+      height: 500px;
+      video {
+         width: 55%;
+      }
+   }
+   @include mq(mobile) {
+      height: 60vh;
+      video {
+         height: 45%;
+         width: auto;
       }
    }
 }

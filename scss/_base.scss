@@ -1,10 +1,10 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 body {
    background-color: #000;
    font-family: $ff-primary;
    color: white;
-   overflow: hidden;
 }
 
 .wrapper {
@@ -21,4 +21,21 @@ body {
    gap: 30px;
    align-content: center;
    z-index: 1;
+   @include mq(tablet-large) {
+      width: 80vw;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+   }
+   @include mq(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      transform: translate(-50%, -35%);
+   }
+   @include mq(mobile) {
+      top: 5%;
+      width: 75vw;
+      transform: translateX(-50%);
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+   }
 }

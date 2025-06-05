@@ -13,3 +13,9 @@ $colors: (
    ts: hsl(211, 57%, 50%, 0.8),
    backend: hsl(209, 26%, 21%, 0.8),
 );
+
+$breakpoints: (
+   tablet-large: 1200px,
+   tablet: 850px,
+   mobile: 600px,
+);

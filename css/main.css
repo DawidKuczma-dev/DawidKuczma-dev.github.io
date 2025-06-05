@@ -39,6 +39,38 @@ a {
   all: unset;
 }
 
+.project-tile__bar--js {
+  background-color: hsla(48, 100%, 61%, 0.8);
+}
+.project-tile:hover .project-tile__bar--js {
+  background-color: #ffd738;
+  transition: background-color 0.3s linear;
+}
+
+.project-tile__bar--react {
+  background-color: hsla(195, 100%, 75%, 0.8);
+}
+.project-tile:hover .project-tile__bar--react {
+  background-color: #80dfff;
+  transition: background-color 0.3s linear;
+}
+
+.project-tile__bar--ts {
+  background-color: hsla(211, 57%, 50%, 0.8);
+}
+.project-tile:hover .project-tile__bar--ts {
+  background-color: #377dc8;
+  transition: background-color 0.3s linear;
+}
+
+.project-tile__bar--backend {
+  background-color: hsla(209, 26%, 21%, 0.8);
+}
+.project-tile:hover .project-tile__bar--backend {
+  background-color: #283643;
+  transition: background-color 0.3s linear;
+}
+
 #wave-canvas {
   position: fixed;
   top: 0;
@@ -74,7 +106,6 @@ body {
   background-color: #000;
   font-family: "Rubik", sans-serif;
   color: white;
-  overflow: hidden;
 }
 
 .wrapper {
@@ -91,6 +122,29 @@ body {
   gap: 30px;
   align-content: center;
   z-index: 1;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 80vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (max-width: 850px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    transform: translate(-50%, -35%);
+  }
+}
+@media (max-width: 600px) {
+  .wrapper {
+    top: 5%;
+    width: 75vw;
+    transform: translateX(-50%);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
 }
 
 .intro-tile {
@@ -118,6 +172,7 @@ body {
   font-size: 1.2rem;
   margin-bottom: 5px;
   color: hsl(236, 100%, 87%);
+  min-height: 46px;
 }
 .intro-tile__me p:last-of-type::after {
   content: "_";
@@ -159,6 +214,24 @@ body {
   color: white;
   font-weight: 500;
 }
+@media (max-width: 1200px) {
+  .intro-tile {
+    grid-row: span 2;
+    height: 500px;
+  }
+  .intro-tile video {
+    width: 55%;
+  }
+}
+@media (max-width: 600px) {
+  .intro-tile {
+    height: 60vh;
+  }
+  .intro-tile video {
+    height: 45%;
+    width: auto;
+  }
+}
 
 @keyframes cursor {
   0%, 30% {
@@ -168,38 +241,6 @@ body {
     opacity: 1;
   }
 }
-.project-tile__bar--js {
-  background-color: hsla(48, 100%, 61%, 0.8);
-}
-.project-tile:hover .project-tile__bar--js {
-  background-color: #ffd738;
-  transition: background-color 0.3s linear;
-}
-
-.project-tile__bar--react {
-  background-color: hsla(195, 100%, 75%, 0.8);
-}
-.project-tile:hover .project-tile__bar--react {
-  background-color: #80dfff;
-  transition: background-color 0.3s linear;
-}
-
-.project-tile__bar--ts {
-  background-color: hsla(211, 57%, 50%, 0.8);
-}
-.project-tile:hover .project-tile__bar--ts {
-  background-color: #377dc8;
-  transition: background-color 0.3s linear;
-}
-
-.project-tile__bar--backend {
-  background-color: hsla(209, 26%, 21%, 0.8);
-}
-.project-tile:hover .project-tile__bar--backend {
-  background-color: #283643;
-  transition: background-color 0.3s linear;
-}
-
 .project-tile {
   border-radius: 20px;
   overflow: hidden;
@@ -266,4 +307,20 @@ body {
 }
 .project-tile.hidden {
   display: none;
+}
+@media (max-width: 1200px) {
+  .project-tile {
+    font-size: 0.8rem;
+  }
+  .project-tile:nth-child(6) {
+    grid-column: 2;
+  }
+}
+@media (max-width: 850px) {
+  .project-tile {
+    font-size: 0.8rem;
+  }
+  .project-tile:nth-child(6) {
+    grid-column: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
