@@ -22,6 +22,10 @@
          font-size: 1.2rem;
          margin-bottom: 5px;
          color: $font-color;
+         &:last-of-type::after {
+            content: '_';
+            animation: cursor 0.3s infinite alternate;
+         }
       }
       h1 {
          font-size: 2.5rem;
@@ -61,5 +65,16 @@
             }
          }
       }
+   }
+}
+
+@keyframes cursor {
+   0%,
+   30% {
+      opacity: 0;
+   }
+   70%,
+   100% {
+      opacity: 1;
    }
 }

@@ -119,6 +119,10 @@ body {
   margin-bottom: 5px;
   color: hsl(236, 100%, 87%);
 }
+.intro-tile__me p:last-of-type::after {
+  content: "_";
+  animation: cursor 0.3s infinite alternate;
+}
 .intro-tile__me h1 {
   font-size: 2.5rem;
   font-weight: inherit;
@@ -156,6 +160,14 @@ body {
   font-weight: 500;
 }
 
+@keyframes cursor {
+  0%, 30% {
+    opacity: 0;
+  }
+  70%, 100% {
+    opacity: 1;
+  }
+}
 .project-tile__bar--js {
   background-color: hsla(48, 100%, 61%, 0.8);
 }
