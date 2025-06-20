@@ -289,6 +289,9 @@ body {
 .project-tile__content div.Cv {
   background-image: url("../assets/images/Cv.png");
 }
+.project-tile__content div.CountryExplorer {
+  background-image: url("../assets/images/CountryExplorer.png");
+}
 .project-tile:hover .project-tile__content {
   background-color: hsl(236, 41%, 34%);
   font-weight: 400;
@@ -304,6 +307,9 @@ body {
 }
 .project-tile:hover .project-tile__content div.Cv {
   background-image: url("../assets/images/Cv-hover.png");
+}
+.project-tile:hover .project-tile__content div.CountryExplorer {
+  background-image: url("../assets/images/CountryExplorer-hover.png");
 }
 .project-tile.hidden {
   display: none;

@@ -2,83 +2,89 @@
 @use 'mixins' as *;
 
 .project-tile {
-   border-radius: 20px;
-   overflow: hidden;
-   position: relative;
-   font-weight: 300;
-   cursor: pointer;
-   clip-path: inset(0 round 20px);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  font-weight: 300;
+  cursor: pointer;
+  clip-path: inset(0 round 20px);
 
-   &__bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 50px;
-      z-index: -1;
-   }
-   &__content {
-      height: calc(100% - 30px);
-      margin-top: 30px;
+  &__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: -1;
+  }
+  &__content {
+    height: calc(100% - 30px);
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: $tile-color;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    transition: background-color 0.3s linear;
+    h1 {
+      font-weight: inherit;
+      margin-bottom: 10px;
+    }
+    div {
+      background-size: cover;
+      width: 100%;
+      height: calc(100% - 48px);
       border-radius: 20px;
-      background-color: $tile-color;
-      padding: 15px;
-      display: flex;
-      flex-wrap: wrap;
-      align-content: space-between;
-      transition: background-color 0.3s linear;
-      h1 {
-         font-weight: inherit;
-         margin-bottom: 10px;
+      transition: 0.3s linear;
+      &.ToDoApp {
+        background-image: url('../assets/images/ToDoApp.png');
       }
+      &.PcBuilder {
+        background-image: url('../assets/images/PcBuilder.png');
+      }
+      &.Cv {
+        background-image: url('../assets/images/Cv.png');
+      }
+      &.CountryExplorer {
+        background-image: url('../assets/images/CountryExplorer.png');
+      }
+    }
+  }
+  &:hover {
+    .project-tile__content {
+      background-color: $tile-hover;
+      font-weight: 400;
       div {
-         background-size: cover;
-         width: 100%;
-         height: calc(100% - 48px);
-         border-radius: 20px;
-         transition: 0.3s linear;
-         &.ToDoApp {
-            background-image: url('../assets/images/ToDoApp.png');
-         }
-         &.PcBuilder {
-            background-image: url('../assets/images/PcBuilder.png');
-         }
-         &.Cv {
-            background-image: url('../assets/images/Cv.png');
-         }
+        border-radius: 5px;
+        &.ToDoApp {
+          background-image: url('../assets/images/ToDoApp-hover.png');
+        }
+        &.PcBuilder {
+          background-image: url('../assets/images/PcBuilder-hover.png');
+        }
+        &.Cv {
+          background-image: url('../assets/images/Cv-hover.png');
+        }
+        &.CountryExplorer {
+          background-image: url('../assets/images/CountryExplorer-hover.png');
+        }
       }
-   }
-   &:hover {
-      .project-tile__content {
-         background-color: $tile-hover;
-         font-weight: 400;
-         div {
-            border-radius: 5px;
-            &.ToDoApp {
-               background-image: url('../assets/images/ToDoApp-hover.png');
-            }
-            &.PcBuilder {
-               background-image: url('../assets/images/PcBuilder-hover.png');
-            }
-            &.Cv {
-               background-image: url('../assets/images/Cv-hover.png');
-            }
-         }
-      }
-   }
-   &.hidden {
-      display: none;
-   }
-   @include mq(tablet-large) {
-      font-size: 0.8rem;
-      &:nth-child(6) {
-         grid-column: 2;
-      }
-   }
-   @include mq(tablet) {
-      font-size: 0.8rem;
-      &:nth-child(6) {
-         grid-column: auto;
-      }
-   }
+    }
+  }
+  &.hidden {
+    display: none;
+  }
+  @include mq(tablet-large) {
+    font-size: 0.8rem;
+    &:nth-child(6) {
+      grid-column: 2;
+    }
+  }
+  @include mq(tablet) {
+    font-size: 0.8rem;
+    &:nth-child(6) {
+      grid-column: auto;
+    }
+  }
 }
