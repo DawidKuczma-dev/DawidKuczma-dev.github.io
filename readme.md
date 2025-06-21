@@ -75,7 +75,7 @@ Moje portfolio frontendowe — aplikacja przedstawia menu, z którego można prz
 
 1. Sklonuj repozytorium  
 ```bash
-git clone https://github.com/DawidKuczma-dev/DawidKuczma-dev.github.io
+git clone https://github.com/DawidKuczma-dev/DawidKuczma-dev.github.io.git
 ```
 2. Otwórz plik `index.html` w przeglądarce lub uruchom lokalny serwer (np. Live Server)
 
