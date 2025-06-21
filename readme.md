@@ -9,9 +9,9 @@ Moje portfolio frontendowe — aplikacja przedstawia menu, z którego można prz
 ## 📸 Zrzuty ekranu
 
 <p align="center">
-  <img src="assets/images/screenshot-mobile.png" width="200" alt="Mobile" />
-  <img src="assets/images/screenshot-tablet.png" width="300" alt="Tablet" />
-  <img src="assets/images/screenshot-desktop.png" width="400" alt="Desktop" />
+  <img src="assets/images/screenshot-mobile.png" width="300" alt="Mobile" />
+  <img src="assets/images/screenshot-tablet.png" width="650" alt="Tablet" />
+  <img src="assets/images/screenshot-desktop.png" width="950" alt="Desktop" />
 </p>
 
 
