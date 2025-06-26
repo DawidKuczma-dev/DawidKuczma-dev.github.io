@@ -9,9 +9,9 @@ Moje portfolio frontendowe — aplikacja przedstawia menu, z którego można prz
 ## 📸 Zrzuty ekranu
 
 <p align="center">
-  <img src="assets/images/screenshot-mobile.png" width="200" alt="Mobile" />
-  <img src="assets/images/screenshot-tablet.png" width="300" alt="Tablet" />
-  <img src="assets/images/screenshot-desktop.png" width="400" alt="Desktop" />
+  <img src="assets/images/screenshot-mobile.png" width="250" alt="Mobile" />
+  <img src="assets/images/screenshot-tablet.png" width="550" alt="Tablet" />
+  <img src="assets/images/screenshot-desktop.png" width="800" alt="Desktop" />
 </p>
 
 
@@ -75,7 +75,7 @@ Moje portfolio frontendowe — aplikacja przedstawia menu, z którego można prz
 
 1. Sklonuj repozytorium  
 ```bash
-git clone https://github.com/DawidKuczma-dev/DawidKuczma-dev.github.io
+git clone https://github.com/DawidKuczma-dev/DawidKuczma-dev.github.io.git
 ```
 2. Otwórz plik `index.html` w przeglądarce lub uruchom lokalny serwer (np. Live Server)
 
