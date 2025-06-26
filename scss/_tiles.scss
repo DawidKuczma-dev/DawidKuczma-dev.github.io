@@ -75,6 +75,11 @@
   &.hidden {
     display: none;
   }
+  @media (max-width: 1570px) {
+    .project-tile__content h1 {
+      font-size: 1.4em;
+    }
+  }
   @include mq(tablet-large) {
     font-size: 0.8rem;
     &:nth-child(6) {
